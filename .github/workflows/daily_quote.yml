@@ -5,6 +5,9 @@ on:
     - cron: '0 0 * * *' # Roz raat 12 baje (UTC) run hoga
   workflow_dispatch: # Button dabakar manual run karne ka option
 
+permissions:
+  contents: write
+
 jobs:
   update-readme:
     runs-on: ubuntu-latest
